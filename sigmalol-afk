@@ -1,0 +1,233 @@
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+		t4 := gui_status_rodando
+		GuiControl, +c00bb23, text4
+		GuiControl,,text4,%t4%
+		Gui, Submit, NoHide
+		GuiControl,Hide,But1
+		GuiControl,Show,Msg1		
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~		
+MsgBox, 262208, SIGMALOL, 
+(LTrim
+%gui_loop0%
+
+%gui_loop2%
+), 3
+Loop
+		{
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	WinSet, Style, -0x10000, ahk_class RiotWindowClass
+	WinSet, Style, -0x10000, ahk_class RCLIENT
+	; WinMinimize, ahk_class RiotWindowClass
+	; WinMinimize, ahk_class RCLIENT
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    IfWinExist, ahk_class RiotWindowClass
+    {
+		WinActivate, ahk_class RiotWindowClass
+        Sleep, 333
+        Click, 60, 60 Left, 1	; click safe
+        Sleep, 500
+		Send {Esc}
+        Sleep, 500
+        Click, 385, 630 Left, 1	; click surrender
+        Sleep, 500
+		Click, 424, 374 Left, 1	; confirmar surrender
+        Sleep, 500
+		Send {Esc}
+        Sleep, 500		
+        Click, 425, 425 Left, 1	; sair agora 
+		WinMinimize, ahk_class RiotWindowClass
+		t4 := gui_aguarde1
+		GuiControl, +c22a1e5, text4
+		GuiControl,,text4,%t4%
+		Gui, Submit, NoHide
+		Sleep, 5000	
+		;----------------------------------------------------------------------------------------------------------------
+		t4 := gui_status_5s
+		GuiControl, +c22a1e5, text4
+		GuiControl,,text4,%t4%
+		Gui, Submit, NoHide
+		Sleep, 1000
+		;----------------------------------------------------------------------------------------------------------------
+		t4 := gui_status_4s
+		GuiControl, +c22a1e5, text4
+		GuiControl,,text4,%t4%
+		Gui, Submit, NoHide
+		Sleep, 1000
+		;----------------------------------------------------------------------------------------------------------------
+		t4 := gui_status_3s
+		GuiControl, +c22a1e5, text4
+		GuiControl,,text4,%t4%
+		Gui, Submit, NoHide
+		Sleep, 1000
+		;---------------------------------------------------------------------------------------------------------------- 
+		t4 := gui_status_2s
+		GuiControl, +c22a1e5, text4
+		GuiControl,,text4,%t4%
+		Gui, Submit, NoHide
+		Sleep, 1000
+		;----------------------------------------------------------------------------------------------------------------
+		t4 := gui_status_1s
+		GuiControl, +c22a1e5, text4
+		GuiControl,,text4,%t4%
+		Gui, Submit, NoHide
+		Sleep, 1000		
+    } ;win exist riotwindowclass
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Else
+    {
+        IfWinExist, ahk_class RCLIENT
+        {
+ 		WinActivate, ahk_class RCLIENT
+        Sleep, 333
+        Click, 289, 32 Left, 1		; tft
+	    Sleep, 600
+	    Click, 53, 78 Left, 1		; inicio
+	    Sleep, 600
+	    Click, 738, 556 Left, 1 	; jogo rapido 
+	    Sleep, 3000
+	    Click, 423, 545 Left, 1		; encontrar partida
+	    Sleep, 1000
+	    Click, 510, 445 Left, 1 	; aceitar partida
+	    Sleep, 500
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        } ;win exist rclient
+	} ;else
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   IfWinExist, ahk_class RiotWindowClass
+    {
+		WinActivate, ahk_class RiotWindowClass
+        Sleep, 333
+        Click, 60, 60 Left, 1	; click safe
+        Sleep, 500
+		Send {Esc}
+        Sleep, 500
+        Click, 385, 630 Left, 1	; click surrender
+        Sleep, 500
+		Click, 424, 374 Left, 1	; confirmar surrender
+        Sleep, 500
+		Send {Esc}
+        Sleep, 500		
+        Click, 425, 425 Left, 1	; sair agora 
+		WinMinimize, ahk_class RiotWindowClass
+		Sleep, 500
+		;----------------------------------------------------------------------------------------------------------------
+		t4 := gui_status_15m
+		GuiControl, +c22a1e5, text4
+		GuiControl,,text4,%t4%
+		Gui, Submit, NoHide
+		Sleep, 60000
+		;----------------------------------------------------------------------------------------------------------------
+		t4 := gui_status_14m
+		GuiControl, +c22a1e5, text4
+		GuiControl,,text4,%t4%
+		Gui, Submit, NoHide
+		Sleep, 60000
+		;----------------------------------------------------------------------------------------------------------------
+		t4 := gui_status_13m
+		GuiControl, +c22a1e5, text4
+		GuiControl,,text4,%t4%
+		Gui, Submit, NoHide
+		Sleep, 60000
+		;---------------------------------------------------------------------------------------------------------------- 
+		t4 := gui_status_12m
+		GuiControl, +c22a1e5, text4
+		GuiControl,,text4,%t4%
+		Gui, Submit, NoHide
+		Sleep, 60000
+		;----------------------------------------------------------------------------------------------------------------
+		t4 := gui_status_11m
+		GuiControl, +c22a1e5, text4
+		GuiControl,,text4,%t4%
+		Gui, Submit, NoHide
+		Sleep, 60000
+		;----------------------------------------------------------------------------------------------------------------
+		t4 := gui_status_10m
+		GuiControl, +c22a1e5, text4
+		GuiControl,,text4,%t4%
+		Gui, Submit, NoHide
+		Sleep, 60000
+		;----------------------------------------------------------------------------------------------------------------
+		t4 := gui_status_9m
+		GuiControl, +c22a1e5, text4
+		GuiControl,,text4,%t4%
+		Gui, Submit, NoHide
+		Sleep, 60000
+		;----------------------------------------------------------------------------------------------------------------
+		t4 := gui_status_8m
+		GuiControl, +c22a1e5, text4
+		GuiControl,,text4,%t4%
+		Gui, Submit, NoHide
+		Sleep, 60000
+		;----------------------------------------------------------------------------------------------------------------
+		t4 := gui_status_7m
+		GuiControl, +c22a1e5, text4
+		GuiControl,,text4,%t4%
+		Gui, Submit, NoHide
+		Sleep, 60000
+		;----------------------------------------------------------------------------------------------------------------
+		t4 := gui_status_6m
+		GuiControl, +c22a1e5, text4
+		GuiControl,,text4,%t4%
+		Gui, Submit, NoHide
+		Sleep, 60000
+		;----------------------------------------------------------------------------------------------------------------
+		t4 := gui_status_5m
+		GuiControl, +c22a1e5, text4
+		GuiControl,,text4,%t4%
+		Gui, Submit, NoHide
+		Sleep, 60000
+		;----------------------------------------------------------------------------------------------------------------
+		t4 := gui_status_4m
+		GuiControl, +c22a1e5, text4
+		GuiControl,,text4,%t4%
+		Gui, Submit, NoHide
+		Sleep, 60000
+		;----------------------------------------------------------------------------------------------------------------
+		t4 := gui_status_3m
+		GuiControl, +c22a1e5, text4
+		GuiControl,,text4,%t4%
+		Gui, Submit, NoHide
+		Sleep, 60000
+		;----------------------------------------------------------------------------------------------------------------
+		t4 := gui_status_2m
+		GuiControl, +c22a1e5, text4
+		GuiControl,,text4,%t4%
+		Gui, Submit, NoHide
+		Sleep, 60000
+		;----------------------------------------------------------------------------------------------------------------
+		t4 := gui_status_1m
+		GuiControl, +c22a1e5, text4
+		GuiControl,,text4,%t4%
+		Gui, Submit, NoHide
+		Sleep, 60000
+		
+		MsgBox, 0, SIGMALOL, 
+		(LTrim
+		%gui_loop1%
+		
+		
+		%gui_loop2%
+		), 3		
+    } ;win exist riotwindowclass
+    Else
+    {
+        IfWinExist, ahk_class RCLIENT
+        {
+ 		WinActivate, ahk_class RCLIENT
+        Sleep, 333
+        Click, 289, 32 Left, 1		; tft
+	    Sleep, 600
+	    Click, 53, 78 Left, 1		; inicio
+	    Sleep, 600
+	    Click, 738, 556 Left, 1 	; jogo rapido 
+	    Sleep, 3000
+	    Click, 423, 545 Left, 1		; encontrar partida
+	    Sleep, 1000
+	    Click, 510, 445 Left, 1 	; aceitar partida
+	    Sleep, 500
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        } ;win exist rclient
+	} ;else
+	
+		} ;if loop
+		Return
